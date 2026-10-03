@@ -1,0 +1,14 @@
+{
+  "name": "cityfix",
+  "version": "1.0.0",
+  "description": "CityFix — Civic Issue Reporting & Municipal Dispatch Platform",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start": "node server/src/index.js",
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
